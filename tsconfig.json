@@ -2,7 +2,7 @@
     "compileOnSave": false,
     "compilerOptions": {
         "outDir": "./.dist/out-tsc",
-        "noImplicitAny": true,
+        "noImplicitAny": false,
         "noImplicitThis": true,
         "noImplicitOverride": true,
         "alwaysStrict": true,
@@ -20,5 +20,11 @@
         "target": "ES2022",
         "useDefineForClassFields": false,
         "lib": ["ES2022"]
+    },
+    "ts-node": {
+        "compilerOptions": {
+            "module": "CommonJS",
+            "target": "ES2022"
+        }
     }
 }
